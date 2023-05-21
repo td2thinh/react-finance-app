@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import { close, logo, menu, sunIcon, moonIcon } from '../assets'
 import { navLinks } from '../constants'
+import { useTheme } from '../context'
+import { useThemeContextProps } from '../App'
 
-type navBarProps = {
-    onThemeToggle: () => void,
-    theme: string
-}
 
-const NavBar = ({ onThemeToggle, theme }: navBarProps) => {
+const NavBar = () => {
+    const { theme, onThemeToggle } = useTheme() as useThemeContextProps
     const [toggle, setToggle] = useState(false)
     return (
         <>

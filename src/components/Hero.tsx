@@ -1,20 +1,23 @@
 import styles from "../style"
 import { discount, robot } from "../assets"
 import GetStarted from "./GetStarted"
+import { useThemeContextProps } from "../App"
+import { useTheme } from "../context"
 
 const Hero = () => {
+    const { theme } = useTheme() as useThemeContextProps
     return (
         <>
             <section id='home' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
                 <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-                    <div className={`flex flex-row items-center py-[6px] px-4 bg-discount-gradient-light dark:bg-discount-gradient rounded-[10px] mb-2`}>
+                    <div className={`flex flex-row items-center py-[6px] px-4 ${theme === "light" ? 'bg-discount-gradient-light' : 'bg-discount-gradient'} rounded-[10px] mb-2`}>
                         <img src={discount} alt="discount" className="w-[32px] h-[32px] mr-2" />
                         <p className={`${styles.paragraph} ml-2`}>
-                            <span className="text-lightAccent">
+                            <span className="dark:text-lightAccent text-light">
                                 20% {' '}
                             </span>
                             Discount for {` `}
-                            <span className="text-lightAccent">
+                            <span className="dark:text-lightAccent text-light">
                                 Annual Plan {` `}
                             </span>
                             Account

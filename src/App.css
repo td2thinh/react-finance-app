@@ -12,7 +12,7 @@
     144.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
-    #11101d 91.61%
+    #181306 91.61%
   );
 }
 
@@ -46,4 +46,9 @@
 /* Toggle A */
 input:checked ~ .dot {
   transform: translateX(100%);
+}
+
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #181306 100%);
 }

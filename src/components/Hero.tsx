@@ -29,7 +29,7 @@ const Hero = () => {
                             <br className="sm:block hidden"></br>
                             <span className="text-lightAccent">Big Thing</span>
                             <br className="sm:block hidden"></br>
-                            is Here.
+                            {' '} is Here.
                         </h1>
                         <div className="ss:flex hidden md:mr-4 mr-0">
                             <GetStarted />

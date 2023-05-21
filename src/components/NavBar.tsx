@@ -26,12 +26,13 @@ const NavBar = ({ onThemeToggle, theme }: navBarProps) => {
                         className="flex items-center cursor-pointer"
                     >
                         <div className="relative">
-                            <input id="toogleA" type="checkbox" className="sr-only" onClick={onThemeToggle} />
+                            <input id="toogleA" type="checkbox" className="sr-only" onChange={onThemeToggle} checked={theme === 'light' ? false : true} />
                             <div className="w-10 h-4 bg-light rounded-full shadow-inner drop-shadow-md"></div>
-                            <div className="dot absolute w-6 h-6 bg-lightText dark:bg-light rounded-full shadow -left-1 -top-1 transition"></div>
+                            <div className='dot -left-1 absolute w-6 h-6 bg-lightText dark:bg-light rounded-full  shadow -top-1 transition'></div>
+
                         </div>
                         <div className="ml-3 font-medium">
-                            <img src={theme === 'light' ? moonIcon : sunIcon} alt='theme' className='w-[20px] h-[20px]' />
+                            <img src={theme === 'light' ? sunIcon : moonIcon} alt='theme' className='w-[20px] h-[20px]' />
                         </div>
                     </label>
                 </ul>
@@ -40,12 +41,13 @@ const NavBar = ({ onThemeToggle, theme }: navBarProps) => {
                         className="flex items-center cursor-pointer"
                     >
                         <div className="relative">
-                            <input id="toogleA" type="checkbox" className="sr-only" onClick={onThemeToggle} />
+                            <input id="toogleA" type="checkbox" className="sr-only" onChange={onThemeToggle} checked={theme === 'light' ? false : true} />
                             <div className="w-10 h-4 bg-light rounded-full shadow-inner drop-shadow-md"></div>
-                            <div className="dot absolute w-6 h-6 bg-lightText dark:bg-light rounded-full shadow -left-1 -top-1 transition"></div>
+                            <div className='dot -left-1 absolute w-6 h-6 bg-lightText dark:bg-light rounded-full  shadow -top-1 transition'></div>
+
                         </div>
                         <div className="ml-3 font-medium">
-                            <img src={theme === 'light' ? moonIcon : sunIcon} alt='theme' className='w-[20px] h-[20px]' />
+                            <img src={theme === 'light' ? sunIcon : moonIcon} alt='theme' className='w-[20px] h-[20px]' />
                         </div>
                     </label>
                     <img src={toggle ? close : menu} alt='menu' className='w-[30px] h-[30px] ml-3 cursor-pointer' onClick={() => setToggle(prev => !prev)} />

@@ -4,13 +4,20 @@ import "./App.css";
 import { useEffect, useState } from "react";
 
 const App = () => {
-  const [theme, setTheme] = useState('light')
+
+  if (localStorage.getItem('theme') === null) {
+    localStorage.setItem('theme', JSON.stringify('light'))
+  }
+
+  const [theme, setTheme] = useState(JSON.parse(localStorage.getItem('theme') || 'light'))
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark')
-    } else {
+    localStorage.setItem('theme', JSON.stringify(theme))
+    if (theme === 'light') {
       document.documentElement.classList.remove('dark')
+    }
+    else {
+      document.documentElement.classList.add('dark')
     }
   }, [theme])
 

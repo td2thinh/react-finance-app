@@ -46,5 +46,4 @@
 /* Toggle A */
 input:checked ~ .dot {
   transform: translateX(100%);
-  background-color: #f9f2e7;
 }

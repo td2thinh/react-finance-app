@@ -1,7 +1,6 @@
 import styles from "./style";
 import { Billing, Business, CardDeal, Clients, Footer, NavBar, Stats, Testimonials, Hero, CallToAction } from "./components";
 import "./App.css";
-import { useEffect, useState } from "react";
 import { ThemeProvider } from "./context";
 
 export type useThemeContextProps = {

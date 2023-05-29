@@ -58,4 +58,7 @@ input:checked ~ .dot {
   background: linear-gradient(125.17deg, #305fb5 0%, #a1d9fc 100%);
 }
 
-
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}

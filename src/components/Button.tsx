@@ -1,8 +1,14 @@
-import React from 'react'
 
-const Button = () => {
+type ButtonProps = {
+    text: string,
+    styles?: string
+}
+
+const Button = ({ text, styles }: ButtonProps) => {
     return (
-        <div>Button</div>
+        <button type="button" className={`py-4 px-6 font-poppins bg-lightAccent font-medium text-[18px] outline-none ${styles}`}>
+            {text}
+        </button>
     )
 }
 

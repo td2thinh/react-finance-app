@@ -27,7 +27,7 @@ export default {
       lightSecondaryButtonHover: "#ebe2d7",
       lightSecondaryButtonActive: "#dcd2c5",
       lightAccent: "#a1d9fc",
-      dark: "#181306",
+      dark: "#00040f",
       darkText: "#fefdfb",
     },
     fontFamily: {

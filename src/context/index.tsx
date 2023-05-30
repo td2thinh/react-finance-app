@@ -12,7 +12,7 @@ const ThemeContext = createContext({})
 
 export const ThemeProvider = ({ children }: ThemeContextProps) => {
     if (localStorage.getItem('theme') === null) {
-        localStorage.setItem('theme', JSON.stringify('light'))
+        localStorage.setItem('theme', JSON.stringify('dark'))
     }
 
     const [theme, setTheme] = useState(JSON.parse(localStorage.getItem('theme') || 'light'))

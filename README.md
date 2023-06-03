@@ -1,12 +1,6 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/td2thinh/fastapi-markdown-server">
-    <img src="https://d3uyj2gj5wa63n.cloudfront.net/wp-content/uploads/2021/02/fastapi-logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">React Finance App for Banking or Crypto project</h3>
-
-
 </p>
 
 
